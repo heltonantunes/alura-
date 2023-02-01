@@ -1,0 +1,144 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundário: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    color: var(--branco-principal);
+}
+
+.principal {
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 1px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--cinza-secundário);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 3em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color:var(--cinza-secundário);
+    font-size: 16px;
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivo__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivo__titulo {
+    font-size: 48px;
+}
+
+.lista__itens {
+    font-size: 32px;
+}
+
+.lista__link {
+    display: inline;
+}
+
+a {
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin: 0 0.5em;
+    font-size: 1em;
+}
+
+.rodape {
+    text-align: center;
+    margin: 10em 5em 0 5em;
+}
+
+.rodape__logo {
+    margin-bottom: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    font-size: 14px;
+    color: var(--cinza-secundário);
+}
